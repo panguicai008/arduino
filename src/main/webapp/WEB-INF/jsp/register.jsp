@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>万宏物联网服务后台管理系统</title>
+<title>注册界面</title>
 <%@include file="/common/meta.jsp"%>
 </head>
 <body>
@@ -21,7 +21,7 @@
 							<td><input type="email" id="username" name="username"
 								placeholder="Email"></td>
 							<td><button type="button" id="btnSendCode"
-									onclick="cendCode()" class="btn btn-default">发送验证码</button></td>
+									onclick="sendCode()" class="btn btn-default">发送验证码</button></td>
 						</tr>
 						<tr>
 							<td>验证码：</td>
@@ -62,11 +62,7 @@
 								placeholder="地址"></td>
 							<td></td>
 						</tr>
-						<tr>
-							<td>公司：</td>
-							<td><input required="required" name="cname" placeholder="公司"></td>
-							<td></td>
-						</tr>
+						
 						<tr>
 							<td colspan="3"><button type="submit" onclick="submit()">提交</button></td>
 						</tr>
@@ -86,7 +82,7 @@
 				$('#passwordSpan').text('');
 			}
 		}
-		function cendCode() {
+		function sendCode() {
 			var email = $('#username').val();
 			$.get(contextPath + '/register/sendCode.do', {
 				"email" : email

@@ -9,16 +9,16 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
-	<context:component-scan base-package="com.whck"
+	<context:component-scan base-package="com.arduino"
 		annotation-config="true">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
 	<bean class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
-		<property name="url" value="jdbc:mysql://192.168.1.130/whck" />
-		<property name="username" value="admin" />
-		<property name="password" value="123456" />
+		<property name="url" value="jdbc:mysql://localhost:3306/arduino" />
+		<property name="username" value="root" />
+		<property name="password" value="student" />
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<!--maxActive: 最大连接数量 -->
 		<property name="maxActive" value="150" />

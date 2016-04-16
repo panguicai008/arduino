@@ -15,8 +15,9 @@
 					<div class="form-group">
 						<label for="username">登录名:</label> <input
 							class="easyui-validatebox form-control" type="text"
-							name="username" readonly="readonly" value="${user.username }" />
+							name="username" data-options="required:true" value="${user.username }" />
 					</div>
+					
 					<div class="form-group">
 						<label for="name">姓名:</label> <input
 							class="easyui-validatebox form-control" type="text" name="name"
@@ -27,19 +28,9 @@
 							class="form-control" type="number" name="phone"
 							value="${user.phone }" />
 					</div>
-				</div>
-				<div class="col-md-5">
 					<div class="form-group">
 						<label for="address">地址:</label> <input class="form-control"
 							type="text" name="address" value="${user.address }" />
-					</div>
-					<div class="form-group">
-						<label for="cname">公司:</label> <input class="form-control"
-							type="text" name="cname" value="${user.cname }" />
-					</div>
-					<div class="form-group">
-						<label for="remarks">备注:</label> <input class="form-control"
-							type="text" name="remarks" value="${user.remarks }" />
 					</div>
 				</div>
 
@@ -75,7 +66,7 @@
 		}
 		function bindBack() {
 			$('#btnBack').bind('click', function() {
-				window.location.href = contextPath + '/user/userList.do'
+				window.location.href = contextPath + '/user/main.do'
 			});
 		}
 		$(function() {

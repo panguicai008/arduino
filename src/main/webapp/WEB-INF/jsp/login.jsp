@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>万宏物联网服务后台管理系统</title>
+<title>登陆界面</title>
 <%@include file="/common/meta.jsp"%>
 </head>
 <body>

@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@include file="/common/meta.jsp"%>
 <%@include file="/common/easyui.jsp"%>
-<title>万宏物联网服务后台管理系统</title>
+<title>办公室节能控制后台管理系统</title>
 </head>
 <body class="easyui-layout">
 	<div data-options="region:'north',split:true" style="height: 100px;">
@@ -36,7 +36,7 @@
 				</p>
 				<p>
 					<a href="javascript:void(0)" onclick="setFrm(this)"
-						data-url="${contextPath }/user/userList.do">用户列表</a>
+						data-url="${contextPath }/user/main.do">用户列表</a>
 				</p>
 			</div>
 			<div title="区域管理"
@@ -44,7 +44,23 @@
 				style="padding: 10px;">
 			<p>
 				<a href="javascript:void(0)" onclick="setFrm(this)"
-						data-url="${contextPath }/zone/main.do">区域列表</a>
+						data-url="${contextPath }/room/main.do">房间列表</a>
+			</p>
+			</div>
+			<div title="设备管理"
+				data-options="iconCls:'icon-large-shapes',selected:true"
+				style="padding: 10px;">
+			<p>
+				<a href="javascript:void(0)" onclick="setFrm(this)"
+						data-url="${contextPath }/device/main.do">设备列表</a>
+			</p>
+			</div>
+			<div title="数据操作"
+				data-options="iconCls:'icon-large-chart',selected:true"
+				style="padding: 10px;">
+			<p>
+				<a href="javascript:void(0)" onclick="setFrm(this)"
+						data-url="${contextPath }/data/main.do">数据列表</a>
 			</p>
 			</div>
 		</div>

@@ -33,14 +33,6 @@
 						<label for="address">地址:</label> <input class="form-control"
 							type="text" name="address" value="${user.address }" />
 					</div>
-					<div class="form-group">
-						<label for="cname">公司:</label> <input class="form-control"
-							type="text" name="cname" value="${user.cname }" />
-					</div>
-					<div class="form-group">
-						<label for="remarks">备注:</label> <input class="form-control"
-							type="text" name="remarks" value="${user.remarks }" />
-					</div>
 				</div>
 
 				<div class="col-md-12">
@@ -79,7 +71,7 @@
 		}
 		function bindBack() {
 			$('#btnBack').click(function() {
-				window.location = contextPath + '/user/userList.do'
+				window.location = contextPath + '/user/main.do'
 			});
 		}
 		$(function() {

@@ -33,14 +33,7 @@
 						<label for="address">地址:</label> <input class="form-control"
 							type="text" name="address" value="${LOGIN_SESSION_DATA.address }" />
 					</div>
-					<div class="form-group">
-						<label for="cname">公司:</label> <input class="form-control"
-							type="text" name="cname" value="${LOGIN_SESSION_DATA.cname }" />
-					</div>
-					<div class="form-group">
-						<label for="remarks">备注:</label> <input class="form-control"
-							type="text" name="remarks" value="${LOGIN_SESSION_DATA.remarks }" />
-					</div>
+					
 				</div>
 
 				<div class="col-md-12">
