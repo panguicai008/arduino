@@ -60,7 +60,7 @@ public class RegisterController {
 		if (session.getAttribute(Keys.REGISTER_ACTIVE_CODE) == null) {
 			return "register";
 		}
-		if (user.getActivateCode().equals(session.getAttribute(Keys.REGISTER_ACTIVE_CODE).toString())) {
+		if (user.getValidateCode().equals(session.getAttribute(Keys.REGISTER_ACTIVE_CODE).toString())) {
 			user.setRegDate(new Date());
 			user.setPassword(MD5Util.getSecurityCode(user.getPassword()));
 			this.userService.add(user);

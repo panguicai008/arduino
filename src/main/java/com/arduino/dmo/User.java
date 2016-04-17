@@ -17,8 +17,8 @@ public class User implements Serializable {
 	@Id
 	private String username;
 
-	@Column(name="activate_code")
-	private String activateCode;
+	@Column(name="validate_code")
+	private String validateCode;
 
 	private String address;
 
@@ -34,7 +34,7 @@ public class User implements Serializable {
 	@Column(name="reg_date")
 	private Date regDate;
 
-	private Integer state;
+	
 
 	public User() {
 	}
@@ -47,12 +47,12 @@ public class User implements Serializable {
 		this.username = username;
 	}
 
-	public String getActivateCode() {
-		return this.activateCode;
+	public String getValidateCode() {
+		return this.validateCode;
 	}
 
-	public void setActivateCode(String activateCode) {
-		this.activateCode = activateCode;
+	public void setValidateCode(String validateCode) {
+		this.validateCode = validateCode;
 	}
 
 	public String getAddress() {
@@ -103,12 +103,5 @@ public class User implements Serializable {
 		this.regDate = regDate;
 	}
 
-	public Integer getState() {
-		return this.state;
-	}
-
-	public void setState(Integer state) {
-		this.state = state;
-	}
-
+	
 }
